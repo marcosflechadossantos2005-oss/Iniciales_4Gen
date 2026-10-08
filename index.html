@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Starters Gen 4</title>
+    <link rel="icon" type="image/png" href="./src/pokeball.png">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url("./src/fondo.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .chimchar {
+            height: 70px;
+            border: solid black;
+            border-radius: 100px;
+            background-color: papayawhip;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .chimchar:hover {
+            transition-duration: 2s;
+            transform: scale(1.1);
+            background-color: rgba(255, 136, 0, 0.829);
+        }
+
+        .piplup {
+            height: 70px;
+            border: solid black;
+            border-radius: 100px;
+            background-color: papayawhip;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .piplup:hover {
+            transition-duration: 2s;
+            transform: scale(1.1);
+            background-color: aqua;
+        }
+
+        .turtwig {
+            height: 70px;
+            border: solid black;
+            border-radius: 100px;
+            background-color: papayawhip;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .turtwig:hover {
+            transition-duration: 2s;
+            transform: scale(1.1);
+            background-color: rgb(0, 255, 0);
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .intro {
+            padding: 10px;
+            width: 700px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .pokes {
+            background-color: rgb(156, 154, 154);
+            border-radius: 20px;
+            border: solid black 2px;
+            padding: 10px;
+            width: 500px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .pokes div h3 {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Pagina principal-->
+    <section class="intro">
+        <h1>Iniciales de la cuarta generación</h1>
+        <p>En esta página se visualizan los Pokemons niciales de la cuarta generación.
+            En esta generación el trío de iniciales está basado en mitologías del mundo.
+        </p>
+    </section>
+    <section class="pokes">
+        <div>
+            <a href="chimchar.html"><img class="chimchar" src="./src/chimchar.gif"></a>
+            <h3>Chimchar</h3>
+        </div>
+        <p>Su etapa evolutiva final (Infernape), está basada en el rey mono "Sun Wukong".</p>
+    </section>
+    <section class="pokes">
+        <div>
+            <a href="piplup.html"><img class="piplup" src="./src/piplup.gif"></a>
+            <h3>Piplup</h3>
+        </div>
+        <p>Su etapa evolutiva final (Empoleon), está basada en el dios griego "Poseidon".</p>
+    </section>
+    <section class="pokes">
+        <div>
+            <a href="turtwig.html"><img class="turtwig" src="./src/turtwig.gif"></a>
+            <h3>Turtwig</h3>
+        </div>
+        <p>Su etapa evolutiva final (Torterra), está basada en la tortuga hindú que sostiene el mundo.</p>
+    </section>
+
+</body>
+
+</html>

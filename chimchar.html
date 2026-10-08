@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Chimchar</title>
+    <link rel="icon" type="image/png" href="./src/chimchar.png">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url("./src/fondo.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .lineaEvolutiva {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
+            width: 600px;
+        }
+
+        .fase img {
+            height: 400px;
+            margin-bottom: 100px;
+        }
+
+        a {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        a button {
+            background-color: papayawhip;
+            height: 70px;
+            width: 200px;
+            font-size: 20px;
+            border-radius: 30px;
+        }
+
+        a button:hover {
+            transition-duration: 1.5s;
+            transform: scale(1.1);
+            background-color: rgba(140, 28, 245, 0.671);
+        }
+
+        .volver {
+            text-decoration: none;
+        }
+
+        p {
+            background-color: rgba(252, 162, 79, 0.603);
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+        .contenedor-imagen {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 50px;
+        }
+
+        .contenedor-imagen img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 110%;
+            height: 110%;
+            object-fit: cover;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .contenedor-imagen .img-top {
+            opacity: 0;
+        }
+
+        .contenedor-imagen:hover .img-top {
+            opacity: 1;
+        }
+
+        .contenedor-imagen:hover .img-base {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="lineaEvolutiva">
+        <h1>Chimchar</h1>
+        <p>Chimchar (ヒコザル Hikozaru en japonés) es un Pokémon de tipo Fuego introducido en la cuarta generación. Es uno
+            de los tres Pokémon iniciales que pueden elegir los entrenadores que empiezan su aventura en la región de
+            Sinnoh
+        </p>
+        <a class="contenedor-imagen">
+            <img src="./src/chimchar.gif" alt="Primera imagen" class="img-base">
+            <img src="./src/chimchar_shiny.gif" alt="Segunda imagen" class="img-top">
+        </a>
+        <h1>Monferno</h1>
+        <p>Monferno (モウカザル Moukazaru en japonés) es un Pokémon de tipo Fuego y tipo Lucha, evolucionado de un Chimchar
+            que alcanzó el nivel 14
+        </p>
+        <a class="contenedor-imagen">
+            <img src="./src/monferno.gif" alt="Primera imagen" class="img-base">
+            <img src="./src/monferno_shiny.gif" alt="Segunda imagen" class="img-top">
+        </a>
+        <h1>Infernape</h1>
+        <p>Infernape (ゴウカザル Goukazaru en japonés) es un Pokémon de tipo Fuego y tipo Lucha, evolucionado de un Infernape
+            al alcanzar el nivel 36</p>
+        <a class="contenedor-imagen">
+            <img src="./src/infernape.gif" alt="Primera imagen" class="img-base">
+            <img src="./src/infernape_shiny.gif" alt="Segunda imagen" class="img-top">
+        </a>
+    </section>
+    <a class="volver" href="./index.html">
+        <button>Página principal</button>
+    </a>
+</body>
+
+</html>

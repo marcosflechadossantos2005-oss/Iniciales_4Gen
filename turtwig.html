@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Turtwig</title>
+    <link rel="icon" type="image/png" href="./src/turtwig.png">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url("./src/fondo.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .lineaEvolutiva {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
+            width: 600px;
+        }
+
+        .fase img {
+            height: 400px;
+            margin-bottom: 100px;
+        }
+
+        a {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        a button {
+            background-color: papayawhip;
+            height: 70px;
+            width: 200px;
+            font-size: 20px;
+            border-radius: 30px;
+        }
+
+        a button:hover {
+            transition-duration: 1.5s;
+            transform: scale(1.1);
+            background-color: rgba(140, 28, 245, 0.671);
+        }
+
+        .volver {
+            text-decoration: none;
+        }
+
+        p {
+            background-color: rgba(143, 255, 133, 0.603);
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+
+        .contenedor-imagen {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 50px;
+        }
+
+        .contenedor-imagen img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 110%;
+            height: 110%;
+            object-fit: cover;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .contenedor-imagen .img-top {
+            opacity: 0;
+        }
+
+        .contenedor-imagen:hover .img-top {
+            opacity: 1;
+        }
+
+        .contenedor-imagen:hover .img-base {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="lineaEvolutiva">
+        <h1>Turtwig</h1>
+        <p>Turtwig (ナエトル Naetle en japonés) es un Pokémon de tipo Planta introducido en la cuarta generación. Es uno de
+            los tres Pokémon iniciales que pueden elegir los entrenadores que empiezan su aventura en la región de
+            Sinnoh, junto a Chimchar y Piplup
+        </p>
+        <a class="contenedor-imagen">
+            <img src="./src/turtwig.gif" alt="Primera imagen" class="img-base">
+            <img src="./src/turtwig_shiny.gif" alt="Segunda imagen" class="img-top">
+        </a>
+        <h1>Grotle</h1>
+        <p>Grotle (ハヤシガメ Hayashigame en japonés) es un Pokémon de tipo Planta, que evoluciona de un Turtwig al alcanzar
+            el nivel 18
+        </p>
+        <a class="contenedor-imagen">
+            <img src="./src/grotle.gif" alt="Primera imagen" class="img-base">
+            <img src="./src/grotle_shiny.gif" alt="Segunda imagen" class="img-top">
+        </a>
+        <h1>Torterra</h1>
+        <p>Torterra (ドダイトス Dodaitose en japonés) es un Pokémon de tipo Planta y tipo Tierra, evolucionado de un Grotle
+            al alcanzar el nivel 32</p>
+        <a class="contenedor-imagen">
+            <img src="./src/torterra.gif" alt="Primera imagen" class="img-base">
+            <img src="./src/torterra_shiny.gif" alt="Segunda imagen" class="img-top">
+        </a>
+    </section>
+    <a class="volver" href="./index.html">
+        <button>Página principal</button>
+    </a>
+</body>
+
+</html>
